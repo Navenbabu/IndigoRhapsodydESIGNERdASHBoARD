@@ -2,7 +2,7 @@
 export const loginDesigner = async (email, password) => {
   try {
     const response = await fetch(
-      "https://indigo-rhapsody-backend-ten.vercel.app/user/login",
+      "https://indigo-rhapsody-backend-sigma.vercel.app/user/login",
       {
         method: "POST",
         headers: {

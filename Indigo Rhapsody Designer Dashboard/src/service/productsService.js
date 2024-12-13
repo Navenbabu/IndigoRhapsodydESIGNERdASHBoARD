@@ -2,7 +2,7 @@ export const getProductsBydesigner = async () => {
   try {
     const designerId = localStorage.getItem("designerId");
     const response = await fetch(
-      `https://indigo-rhapsody-backend-ten.vercel.app/products/getProductsByDesigner/${designerId}`,
+      `https://indigo-rhapsody-backend-sigma.vercel.app/products/getProductsByDesigner/${designerId}`,
       {
         method: "GET",
         headers: {
@@ -27,7 +27,7 @@ export const getProductsBydesigner = async () => {
 export const createPassword = async (email, password) => {
   try {
     const response = await fetch(
-      "https://indigo-rhapsody-backend-ten.vercel.app/products/createProduct",
+      "https://indigo-rhapsody-backend-sigma.vercel.app/products/createProduct",
       {
         method: "POST",
         headers: {

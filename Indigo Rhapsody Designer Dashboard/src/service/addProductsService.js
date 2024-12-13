@@ -2,7 +2,7 @@ export const getCategory = async () => {
   try {
     const designerId = localStorage.getItem("designerId");
     const response = await fetch(
-      `https://indigo-rhapsody-backend-ten.vercel.app/category`,
+      `https://indigo-rhapsody-backend-sigma.vercel.app/category`,
       {
         method: "GET",
         headers: {
@@ -26,7 +26,7 @@ export const getCategory = async () => {
 export const getSubCategory = async (categoryId) => {
   try {
     const response = await fetch(
-      `https://indigo-rhapsody-backend-ten.vercel.app/subcategory/getSubCategoriesByCategory/${categoryId}`,
+      `https://indigo-rhapsody-backend-sigma.vercel.app/subcategory/getSubCategoriesByCategory/${categoryId}`,
       {
         method: "GET",
         headers: {
@@ -60,7 +60,7 @@ export const createProduct = async (productData) => {
     };
 
     const response = await fetch(
-      "https://indigo-rhapsody-backend-ten.vercel.app/products/createProduct",
+      "https://indigo-rhapsody-backend-sigma.vercel.app/products/createProduct",
       {
         method: "POST",
         headers: {
@@ -99,7 +99,7 @@ export const uploadBulkExcel = async (fileUrl) => {
     };
 
     const response = await fetch(
-      `https://indigo-rhapsody-backend-ten.vercel.app/products/uploadBulk`,
+      `https://indigo-rhapsody-backend-sigma.vercel.app/products/uploadBulk`,
       {
         method: "POST",
         headers: {
@@ -137,7 +137,7 @@ export const edituploadBulkExcel = async (fileUrl) => {
     };
 
     const response = await fetch(
-      `https://indigo-rhapsody-backend-ten.vercel.app/products/updateId`,
+      `https://indigo-rhapsody-backend-sigma.vercel.app/products/updateId`,
       {
         method: "POST",
         headers: {
@@ -172,7 +172,7 @@ export const updateProduct = async (productId, productData) => {
 
     // Use the productId in the URL
     const response = await fetch(
-      `https://indigo-rhapsody-backend-ten.vercel.app/products/products/${productId}`,
+      `https://indigo-rhapsody-backend-sigma.vercel.app/products/products/${productId}`,
       {
         method: "PUT", // Use PUT for updates
         headers: {
@@ -199,7 +199,7 @@ export const updateProduct = async (productId, productData) => {
 export const AddCategory = async (categoryData) => {
   try {
     const response = await fetch(
-      `https://indigo-rhapsody-backend-ten.vercel.app/subcategory/`,
+      `https://indigo-rhapsody-backend-sigma.vercel.app/subcategory/`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

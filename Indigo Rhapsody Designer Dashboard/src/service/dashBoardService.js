@@ -2,7 +2,7 @@ export const dashBoardDesigner = async () => {
   try {
     const designerId = localStorage.getItem("designerId");
     const response = await fetch(
-      `https://indigo-rhapsody-backend-ten.vercel.app/order/total-orders/designer/${designerId}`,
+      `https://indigo-rhapsody-backend-sigma.vercel.app/order/total-orders/designer/${designerId}`,
       {
         method: "GET",
         headers: {
@@ -27,7 +27,7 @@ export const dashBoardDesignerSales = async () => {
   try {
     const designerId = localStorage.getItem("designerId");
     const response = await fetch(
-      `https://indigo-rhapsody-backend-ten.vercel.app/order/total-sales/designer/${designerId}`,
+      `https://indigo-rhapsody-backend-sigma.vercel.app/order/total-sales/designer/${designerId}`,
       {
         method: "GET",
         headers: {
@@ -53,7 +53,7 @@ export const dashBoardDesignerProducts = async () => {
   try {
     const designerId = localStorage.getItem("designerId");
     const response = await fetch(
-      `https://indigo-rhapsody-backend-ten.vercel.app/products/total-products/designer/${designerId}`,
+      `https://indigo-rhapsody-backend-sigma.vercel.app/products/total-products/designer/${designerId}`,
       {
         method: "GET",
         headers: {
@@ -79,7 +79,7 @@ export const getOrderForTable = async () => {
   try {
     const designerId = localStorage.getItem("designerId");
     const response = await fetch(
-      `https://indigo-rhapsody-backend-ten.vercel.app/order/designer/${designerId}`,
+      `https://indigo-rhapsody-backend-sigma.vercel.app/order/designer/${designerId}`,
       {
         method: "GET",
         headers: {
