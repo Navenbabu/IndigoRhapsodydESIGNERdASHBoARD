@@ -1,5 +1,5 @@
 
-const BASE_URL = "https://indigo-rhapsody-backend-ten.vercel.app";
+const BASE_URL = "https://indigo-rhapsody-backend-sigma.vercel.app";
 
 const designerId = localStorage.getItem("designerId");
 

@@ -1,6 +1,6 @@
 import { storage } from "../../src/service/firebaseService"; // Import the storage instance
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
-const BASE_URL = "https://indigo-rhapsody-backend-ten.vercel.app";
+const BASE_URL = "https://indigo-rhapsody-backend-sigma.vercel.app";
 
 export const dashBoardDesigner = async () => {
   try {
